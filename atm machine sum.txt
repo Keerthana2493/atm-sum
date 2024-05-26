@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    printf("Total number of notes:\n");
+    while(n)
+    {
+    if(n>=500)
+    {
+        printf("500:%d\n",n/500);
+        n=n%500;
+    }
+        else if(n<500&&n>=100)
+        {
+            
+        printf("100:%d\n",n/100);
+        n=n%100;
+        }
+        else if(n<100&&n>=50)
+            {
+            
+        printf("50:%d\n",n/50);
+        n=n%50;
+        }
+        else if(n<50&&n>=20)
+            {
+            
+        printf("20:%d\n",n/20);
+        n=n%20;
+        }
+        else if(n<20&&n>=10)
+            {
+            
+        printf("10:%d\n",n/10);
+        n=n%10;
+        }
+        else if(n<10&&n>=5)
+            {
+            
+        printf("5:%d\n",n/5);
+        n=n%5;
+        }
+        else if(n<5&&n>=2)
+            {
+            
+        printf("2:%d\n",n/2);
+        n=n%2;
+        }
+        else
+        {
+            printf("1:%d\n",n);
+        }
+    }
+        
+        
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
